@@ -1,0 +1,76 @@
+@import 'varibles.css';
+@import 'reset.css';
+@import 'fonts.css';
+@import './components/header.css';
+
+
+body {
+    background: var(--primaryColor);
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.intro {
+    min-height: 640px;
+    background: url('../images/intro-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro::before {
+    content: '';
+    background-color: rgba(7, 15, 25, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro__content {
+    position: relative;
+    z-index: 1;
+}
+
+.intro__content-title {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.intro__content-descr {
+    color: #C8C8C8;
+    text-align: justify;
+    font-family: var(--mon);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.intro__content-btns-group {
+    display: flex;
+    gap: 30px;
+}
+
+.primary__btn {
+    padding: 17px 48px;
+    background-color: var(--primaryColor);
+    border-radius: 4px;
+    color: var(--whiteColor);
+    text-align: justify;
+    font-family: var(--rob);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}
